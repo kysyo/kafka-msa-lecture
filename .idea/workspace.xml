@@ -4,7 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e8e89194-a99d-429e-9cd8-30e4d728aa33" name="변경" comment="first commit" />
+    <list default="true" id="e8e89194-a99d-429e-9cd8-30e4d728aa33" name="변경" comment="first commit">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/week3team2/lectureservice/config/KafkaConsumerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/week3team2/lectureservice/config/KafkaProducerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/week3team2/lectureservice/service/ConsumerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/week3team2/lectureservice/service/ConsumerServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/week3team2/lectureservice/service/ProducerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/week3team2/lectureservice/service/ProducerServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/week3team2/lectureservice/handler/LectureAdminHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/week3team2/lectureservice/handler/LectureAdminHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/week3team2/lectureservice/service/LectureServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/week3team2/lectureservice/service/LectureServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -40,6 +53,14 @@
       </state>
     </system>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
@@ -52,6 +73,7 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="28N6f8xd6GGq1X6Tz1RFOHLuxU9" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -63,13 +85,24 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/week3team2/lectureservice/service" />
     <property name="project.structure.last.edited" value="모듈" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
     <property name="two.files.diff.last.used.folder" value="$PROJECT_DIR$/../CodestatesTeam2LectureService/src/main/java/com/week3team2/lectureservice" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/com/week3team2/lectureservice/service" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.week3team2.lectureservice.router" />
+      <recent name="com.week3team2.lectureservice.handler" />
+      <recent name="com.week3team2.lectureservice.config" />
+    </key>
   </component>
   <component name="RunManager" selected="Spring Boot.LectureserviceApplication">
     <configuration name="msa-lecture [dependencies]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
@@ -120,7 +153,7 @@
       <workItem from="1651074561506" duration="496000" />
       <workItem from="1651121398750" duration="3695000" />
       <workItem from="1651155783529" duration="516000" />
-      <workItem from="1651156326394" duration="17000" />
+      <workItem from="1651156326394" duration="12121000" />
     </task>
     <task id="LOCAL-00001" summary="강의 컨텐츠 추가">
       <created>1651049412947</created>

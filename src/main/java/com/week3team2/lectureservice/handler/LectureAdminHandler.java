@@ -2,12 +2,14 @@ package com.week3team2.lectureservice.handler;
 
 import com.week3team2.lectureservice.entity.Lecture;
 import com.week3team2.lectureservice.service.LectureService;
+import com.week3team2.lectureservice.service.ProducerService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Component;
 import org.springframework.web.reactive.function.server.ServerRequest;
 import org.springframework.web.reactive.function.server.ServerResponse;
 import reactor.core.publisher.Mono;
+import reactor.core.scheduler.Schedulers;
 
 import java.util.Map;
 
@@ -16,13 +18,14 @@ import java.util.Map;
 public class LectureAdminHandler {
 
     private final LectureService lectureService;
+    private final ProducerService producerService;
 
     // 강의개설
     public Mono<ServerResponse> createLecture(ServerRequest request) {
-        String jwt = request.headers().firstHeader("Authorization");
-        System.out.println(jwt);
         Mono<Lecture> lectureMono = request.bodyToMono(Lecture.class)
                 .flatMap(lectureService::createLecture)
+                .doOnNext(producerService::sendLectureData) // 카프카 프로듀서에 강의생성 데이터 전달
+                .subscribeOn(Schedulers.boundedElastic())
                 .log()
                 ;
 

@@ -11,24 +11,13 @@ spring:
     url: r2dbc:h2:mem:///lecture;DB_CLOSE_DELAY=-1;DATABASE_TO_UPPER=false
     username: sa
     password:
-    initialization-mode: always
+#    initialization-mode: always
   kafka:
     consumer:
-      group-id: my-test
-      enable-auto-commit: true
-      auto-offset-reset: latest
-      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
-      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
-      max-poll-records: 1000
+      bootstrap-servers: localhost:9092
+      group-id: lecture-group
     producer:
-      key-serializer: org.apache.kafka.common.serialization.StringSerializer
-      value-serializer: org.apache.kafka.common.serialization.StringSerializer
-    template:
-      default-topic: test
-    bootstrap-servers: localhost:9092
-    zipkin:
-      sender:
-        type: kafka
+      bootstrap-servers: localhost:9092
 
 logging:
   level:

@@ -97,6 +97,7 @@ public class LectureServiceImpl implements LectureService {
     public Mono<Lecture> matchingLecture(Lecture lecture) {
         return lectureRepository.findById(lecture.getLectureId())
                 .doOnNext(data-> data.setMemberName(lecture.getMemberName()))
+                .doOnNext(data-> data.setMemberId(lecture.getMemberId()))
                 .doOnNext(data-> data.setUpdateDt(LocalDateTime.now()))
                 .flatMap(lectureRepository::save)
                 .log()
