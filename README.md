@@ -5,6 +5,10 @@
 ### GROUP-ID : lecture-group
 ### 강의 생성 -> (Producer) 강의생성 이벤트 전달 -> Kafka -> (Consumer) 이벤트 받아 신규강의에 디폴트 강사정보 입력
 
+
+
+
+
 - Consumer에 전달된 이벤트 데이터
 
 ![image](https://user-images.githubusercontent.com/53042885/165819986-4659e479-72bb-4e1c-a8f2-ee271cde20ef.png)
